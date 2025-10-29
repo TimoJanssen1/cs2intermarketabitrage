@@ -33,9 +33,9 @@ Execution is **non-trivial**. Example steps:
 
 ## Data
 **BUFF**
-Best ask: GET https://buff.163.com/api/market/goods/sell_order?game=csgo&goods_id=<id>&page_num=1&sort_by=default
-Best bid: GET https://buff.163.com/api/market/goods/buy_order?game=csgo&goods_id=<id>&page_num=1
-Name → goods_id search (works with cookie): GET https://buff.163.com/api/market/goods?game=csgo&search=<name>&page_num=1&sort_by=sell_num.desc
-Headers: include full “Cookie” header string from browser session; also User-Agent, Accept=application/json, Referer=https://buff.163.com/market/?game=csgo, X-Requested-With=XMLHttpRequest.
+- Best ask: GET https://buff.163.com/api/market/goods/sell_order?game=csgo&goods_id=<id>&page_num=1&sort_by=default
+- Best bid: GET https://buff.163.com/api/market/goods/buy_order?game=csgo&goods_id=<id>&page_num=1
+- Name → goods_id search (works with cookie): GET https://buff.163.com/api/market/goods?game=csgo&search=<name>&page_num=1&sort_by=sell_num.desc
+- Headers: include full “Cookie” header string from browser session; also User-Agent, Accept=application/json, Referer=https://buff.163.com/market/?game=csgo, X-Requested-With=XMLHttpRequest.
 **Steam:**
 EUR snapshot: GET https://steamcommunity.com/market/priceoverview/?appid=730&currency=3&market_hash_name=<name>
