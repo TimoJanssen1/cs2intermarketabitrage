@@ -10,7 +10,7 @@ Fill Steam’s highest bids using Buff’s lowest asks, under condition: `(PnL >
 - **Recent market shifts?** — To be tested.  
 - **Payment friction:** Buff only accepts **WeChat Pay** and **Alipay**, which limits the buyer base and cross-border capital flows.  
 - **Regional sentiment / demand differences:** Buyer demand on Steam (global) may diverge from Buff (China-centric). Sellers constrained by payment rails may prefer Buff, preserving the spread.  
-- **Fee offset:** Steam’s higher bids can sometimes offset Steam’s 15% fee; whether net PnL is positive depends on depth and realized execution price.
+- **Fee offset:** Steam’s higher bids can sometimes offset Steam’s 15% fee. China has Access to global Steam Market but might only be able to cash out in cny on regional markets, like buff?
 
 ---
 
