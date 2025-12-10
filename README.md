@@ -1,3 +1,4 @@
+# Current Phase: Data Collection and Analysis
 # CS2 Spread Analysis
 
 One-way strategy: buy on Buff, sell on Steam. Currently Phase: Collecting price data to quantify the spread after accounting for Steam's 15% fee and holding period risk.
