@@ -4,7 +4,7 @@
 One-way strategy: buy on Buff, sell on Steam.
 
 ## Background
-Been doing this manually—buying items on Buff (Chinese CS:GO marketplace) and selling on Steam. Noticed consistent spreads on certain items. Using both platforms regularly, so figured I'd try to automate the data collection and analysis.
+Been doing this manually, so far, so fun. Time to collect data and automate Strat: buying items on Buff (Chinese CS:GO marketplace) and selling on Steam. Noticed consistent spreads on certain items. Using both platforms regularly, so figured I'd try to automate the data collection and analysis.
 
 The spread exists because:
 - Buff is China-focused, requires WeChat/Alipay (limits buyer base)
