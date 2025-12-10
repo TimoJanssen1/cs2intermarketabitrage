@@ -3,12 +3,11 @@
 One-way strategy: buy on Buff, sell on Steam. Currently Phase: Collecting price data to quantify the spread after accounting for Steam's 15% fee and holding period risk.
 
 ## Background
-
 Been doing this manually—buying items on Buff (Chinese CS:GO marketplace) and selling on Steam. Noticed consistent spreads on certain items. Using both platforms regularly, so figured I'd try to automate the data collection and analysis.
 
 The spread exists because:
 - Buff is China-focused, requires WeChat/Alipay (limits buyer base)
-- Recent macro: Valve introduced Trade-Up to knives -> market cap crashed. China treats skins as investment, got spooked. Steam doesn't allow direct cashouts (unlike Buff), creating ask-only pressure on Buff. Testing this theory in notebook.
+- Recent macro (aka valve update lol): Valve introduced Trade-Up to knives -> market cap crashed. China treats skins as investment, got spooked. Steam doesn't allow direct cashouts (unlike Buff) and western sites dont cash out in cny, creating ask-only makret on Buff. Testing this theory in notebook. Essentially, Chinese skin collectors might be stuck trading with other Chinese collectors, creating a different dynamic than the global market. (But why not sell on Steam for keys and keys on Chinese sites for cash? Too much effort, too many fees? idk?). My edge is essentially being a Euro collector with access to the Chinese market?
 - Steam is global, higher demand for certain items
 - Payment friction creates arbitrage opportunities
 - Even after Steam's 15% fee, some items still show positive spreads
@@ -27,7 +26,7 @@ If we can consistently identify items where `Steam_bid * 0.85 - Buff_ask > thres
 1. Finding items with sufficient spread to cover fees and risk
 2. Managing holding period volatility (Steam holds items 1-7 days)
 3. Ensuring execution probability (orders actually fill)
-4. Scaling while managing Buff wallet balance and WeChat payment flow
+5. Scaling while managing Buff wallet balance and WeChat payment flow
 
 Next steps after data collection and analysis:
 - Build execution system (Buff purchase automation)
@@ -77,4 +76,5 @@ After 7+ days of data, run `notebooks/market_analysis.ipynb` to:
 - Buff: Auth required, ~20 req/min, undocumented af. wtf maybe see https://github.com/markzhdan/buff163-unofficial-api at somepoint 
 - Rate limits auto-enforced
 - Data quality depends on API stability
-- I dont want to get banned on Wechat. 
+- I dont want to get banned on Wechat.
+-  
