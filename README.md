@@ -41,20 +41,9 @@ Worst Case:
 
 ## Setup
 
-```bash
-pip install -r requirements.txt
-python -m migrations.init_db
-```
-
 Set `BUFF_COOKIE` in `.env` for Buff auth. Get cookie from browser dev tools when logged into buff.163.com.
 
 ## Usage
-
-```bash
-python scripts/add_item.py "AK-47 | Redline (Field-Tested)"
-python -m src.puller.daemon --once
-python -m src.puller.daemon --interval 300
-```
 
 ## Data Schema
 
@@ -64,17 +53,14 @@ SQLite snapshots:
 - `fetch_logs`: Request metadata
 
 ## Analysis
-
-After 7+ days of data, run `notebooks/market_analysis.ipynb` to:
 - Explore spreads and volatility
 - Test ask-only pressure theory (Steam cashout limitation creates more asks than bids on Buff)
 - Identify opportunities
 
 ## Notes
-
 - Steam: Public API, ~10 req/min
 - Buff: Auth required, ~20 req/min, undocumented af. wtf maybe see https://github.com/markzhdan/buff163-unofficial-api at somepoint 
 - Rate limits auto-enforced
 - Data quality depends on API stability
-- I dont want to get banned on Wechat.
+- I dont want to get banned on Wechat 🥺
 -  
