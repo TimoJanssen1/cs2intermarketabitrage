@@ -1,17 +1,16 @@
 # Current Phase: Data Collection and Analysis
 # CS2 Spread Analysis
 
-One-way strategy: buy on Buff, sell on Steam. Currently Phase: Collecting price data to quantify the spread after accounting for Steam's 15% fee and holding period risk.
+One-way strategy: buy on Buff, sell on Steam.
 
 ## Background
 Been doing this manually—buying items on Buff (Chinese CS:GO marketplace) and selling on Steam. Noticed consistent spreads on certain items. Using both platforms regularly, so figured I'd try to automate the data collection and analysis.
 
 The spread exists because:
 - Buff is China-focused, requires WeChat/Alipay (limits buyer base)
-- Recent macro (aka valve update lol): Valve introduced Trade-Up to knives -> market cap crashed. China treats skins as investment, got spooked. Steam doesn't allow direct cashouts (unlike Buff) and western sites dont cash out in cny, creating ask-only makret on Buff. Testing this theory in notebook. Essentially, Chinese skin collectors might be stuck trading with other Chinese collectors, creating a different dynamic than the global market. (But why not sell on Steam for keys and keys on Chinese sites for cash? Too much effort, too many fees? idk?). My edge is essentially being a Euro collector with access to the Chinese market?
+- Recent macro (aka valve update lol): Valve introduced Trade-Up to knives -> market cap crashed. China treats skins as investment, got spooked. Steam doesn't allow direct cashouts (unlike Buff) and western sites dont cash out in cny, creating ask-only makret on Buff. Testing this theory in notebook. Essentially, Chinese skin collectors might be stuck trading with other Chinese collectors, creating a different dynamic than the global market. (But why not sell on Steam for keys and keys on Chinese sites for cash? Too much effort, too many fees? idk?). My edge is essentially being a Euro collector with access to the Chinese market? Bridging payment frictions? Actually doing a service, buff should pay me
 - Steam is global, higher demand for certain items
-- Payment friction creates arbitrage opportunities
-- Even after Steam's 15% fee, some items still show positive spreads
+- Even after Steam's 15% fee, most items still show pretty large positive spreads
 
 Main challenges:
 - Buff API is undocumented and requires authentication
