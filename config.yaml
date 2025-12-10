@@ -1,0 +1,32 @@
+# CS2 Spread Analysis Configuration
+
+# Rate limiting
+rate_limits:
+  steam:
+    requests_per_minute: 10
+    backoff_base: 2.0
+    max_retries: 3
+  buff:
+    requests_per_minute: 20
+    backoff_base: 2.0
+    max_retries: 3
+
+# Puller daemon
+puller:
+  interval_seconds: 300  # 5 minutes default
+  items_to_track: []  # Empty = track all items in DB
+
+# Database
+database:
+  path: db/arbitrage.sqlite
+
+# Logging
+logging:
+  level: INFO
+  file: logs/puller.log
+  console: true
+
+# Currency
+currency:
+  steam_currency_id: 3  # EUR (1=USD, 2=GBP, 3=EUR, etc.)
+  buff_currency: CNY
